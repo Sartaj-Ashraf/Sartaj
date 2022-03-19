@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sartaj Ashraf</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    /* fonts */
+    @font-face {
+      font-family: "Raleway-regular";
+      src: url(/fonts/Raleway-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Raleway-medium";
+      src: url(/fonts/Raleway-Medium.ttf);
+    }
+
+    @font-face {
+      font-family: "Raleway-bold";
+      src: url(/fonts/Raleway-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: "Raleway-samibold";
+      src: url(/fonts/Raleway-SemiBold.ttf);
+    }
+
+    @font-face {
+      font-family: "Raleway-black";
+      src: url(/fonts/Raleway-Black.ttf);
+    }
+
+    @font-face {
+      font-family: "Raleway-extrabold";
+      src: url(/fonts/Raleway-ExtraBold.ttf);
+    }
+
+    /* Colors used  */
+
+    :root {
+      --primary: #3dcfd3;
+      --secondary: #232838;
+      --ternary: #6c6c6c;
+      --danger: #fe4545;
+      --pure: #fefefe;
+      --light: #f0f0f0;
+      --heaven: #ffffff;
+      --footer: #20333f;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      font-family: "Raleway-medium";
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Top header css rules/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// */
+    .container {
+      width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    .nav-top ul li a {
+      font-family: "Raleway-black";
+      font-size: 1.3rem;
+    }
+
+    .top .container .branding img {
+      width: 62px;
+    }
+
+    nav .top {
+      padding: 0.3rem 0;
+    }
+
+    .top .contact img {
+      background: white;
+    }
+
+    nav .top .contact h5,
+    nav .top .time h5 {
+      font-family: "Raleway-samibold";
+      margin-bottom: 0.15rem;
+    }
+
+    nav .top .contact h6,
+    nav .top .time h6 {
+      font-family: "Raleway-bold";
+      margin-bottom: 0.15rem;
+      letter-spacing: 0.055rem;
+    }
+
+    nav .top .contact img,
+    nav .top .time img {
+      margin-right: 1rem;
+    }
+
+
+    nav .navbar a {
+      color: var(--secondary);
+      font-family: "Raleway-black";
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      transition: all 0.4 ease;
+    }
+
+    nav .navbar a.active {
+      background: var(--primary);
+      color: var(--pure);
+    }
+
+    nav .navbar a:hover {
+      background: var(--primary);
+      color: var(--pure);
+    }
+
+    /* Aditional css setting //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    /* Navgation sectr /////////////////////////////////////////////////////////////////*/
+    header.hero {
+      height: 500px;
+      background-image: url(bg-hero.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    header.hero .welcome span {
+      font-family: "Raleway-bold";
+      color: var(--secondary);
+    }
+
+    header.hero h1 {
+      font-family: "Raleway-extrabold";
+      color: var(--secondary);
+      font-size: 2.5rem;
+      margin-bottom: 0.15rem;
+    }
+
+    header.hero h1 span {
+      color: var(--primary);
+    }
+
+    header.hero p {
+      font-family: "Raleway-samibold";
+      width: 55%;
+      line-height: 1.2rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    header.hero .hero-image img {
+      position: absolute;
+    }
+
+    .btn-primary:hover {
+      background: var(--heaven);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background: var(--heaven);
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+    }
+
+    header.hero .container {
+      position: relative;
+    }
+
+    header.hero .hero-image {
+      position: absolute;
+      top: -90px;
+      left: 750px;
+    }
+
+    header.hero .hero-image img {
+      width: 20rem;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .btn-wrapper {
+      margin-top: 2rem;
+    }
+
+
+    /* About section Details//////////////////////////////////////////////////////////////////////// */
+    section.about img {
+      width: 63%;
+    }
+
+    .about h2 {
+      font-family: "Raleway-bold";
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .about p {
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* skills section///////////////////////////////////////////////////// */
+    .progress-bar {
+      padding: 0 2rem;
+    }
+
+    .progress-bar h1 {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .progress-bar h4 {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      padding-bottom: 0.2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .progress-bar span {
+      font-family: "Raleway-bold";
+      position: absolute;
+      left: -2rem;
+      justify-content: center;
+    }
+
+    .soft-skills button {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .progress {
+      position: relative;
+      width: 100%;
+      height: 1.3rem;
+      background-color: rgb(75, 78, 77);
+      border-radius: 0.6rem;
+    }
+
+    .progress .progress-line {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background-color: var(--primary);
+      border-radius: 0.6rem;
+    }
+
+    /* service section ////////////////////////////////////////////////////////////////*/
+    /* Services section */
+    section.services {
+      background: var(--light);
+      position: relative;
+      z-index: 0;
+    }
+
+    section.services .service-wrapper {
+      margin-right: -2rem;
+      margin-top: 6rem;
+    }
+
+    section.services .service-card {
+      background: var(--heaven);
+      padding: 0 .5rem .5rem .5rem;
+      padding-top: 2rem;
+      margin: 1rem;
+      width: 33%;
+      text-align: center;
+      position: relative;
+      border-radius: 4px;
+    }
+
+    section.services .service-card .icon {
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    section.services .service-card h2 {
+      font-family: "Raleway-bold";
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-top: 1.5rem;
+    }
+
+    section.services .service-card p {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-anchor: middle;
+      text-align: left;
+    }
+
+    .service-card .icon {
+      width: 5.2rem;
+    }
+
+    .service-card button {
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Worked samples/////////////////////////////////////////////////////////////// */
+    .graphic-designing h1 {
+      margin: 1rem 0px;
+    }
+
+    .graphic-designing .graphic-content img {
+      padding: 0 0.5rem;
+    }
+
+    .work-wrapper h1 {
+      text-align: center;
+      margin: 2rem 0px;
+    }
+
+    .photoshop .photoshop-content img {
+      padding: 0px 0.5rem;
+    }
+
+    .motion-graphics .motion-content video {
+      padding: 0px 0.5rem;
+    }
+
+    /*Blog section ////////////////////////////////////////////////////////////////*/
+    section.blogs {
+      position: relative;
+      z-index: 0;
+    }
+
+    section.blogs .blog-card {
+      background: var(--light);
+      width: 24%;
+      text-align: center;
+      padding: 1rem;
+      padding-top: 1rem;
+      margin-right: 1rem;
+      position: relative;
+      border-radius: 4px;
+      border-radius: 6px;
+    }
+
+    section.blogs .blog-card img {
+      width: 100%;
+    }
+
+    .blog-card h4 {
+      padding-top: 1rem;
+    }
+
+    /* Contact us ////////////////////////// ///////////////////////////////////////*/
+
+    .contact-me {
+      position: relative;
+      min-height: 100vh;
+      width: 100vw;
+      padding: 0px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+        url(bg_contact.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+
+    .contact-me .content {
+      max-width: 60vw;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .contact-me .content h2 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .container-contact {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .container-contact .contact-info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-contact .contact-info .box {
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .container-contact .contact-info .box .icon {
+      min-width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+    }
+
+    .container-contact .contact-info .box .text {
+      display: flex;
+      margin-left: 20px;
+      font-size: 18px;
+      flex-direction: column;
+      font-weight: 300;
+      background-color: rgba(255, 0, 238, 0);
+    }
+
+    .container-contact .contact-info .box .text h3 {
+      font-weight: 500;
+      color: #00bcd4;
+    }
+
+    .contact-form {
+      width: 40%;
+      padding: 25px;
+      margin: 2rem;
+      background: white;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .contact-form .inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contact-form .inputBox input,
+    .contact-form .inputBox textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+    }
+
+    .contact-form .inputBox span {
+      color: #333;
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.3s;
+      color: #666;
+    }
+
+    .contact-form .inputBox #submit {
+      padding-top: 8px;
+    }
+
+    .contact-form .inputBox input:focus~span,
+    .contact-form .inputBox input:valid~span,
+    .contact-form .inputBox textarea:focus~span,
+    .contact-form .inputBox textarea:valid~span {
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .contact-form .inputBox input[type="submit"] {
+      width: 100px;
+      background: #00bcd4;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .contact-form .inputBox input[type="submit"]:hover {
+      width: 100px;
+      background: #32da10;
+      color: #fff;
+      cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer /////////////////////////////////////////////////////////////////////////////// */
+    footer {
+      background: var(--footer);
+      padding: 4rem 0;
+    }
+
+    footer .container {
+      display: flex;
+      color: var(--pure);
+    }
+
+    footer .box {
+      flex: 1;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    footer .box ul {
+      list-style-type: none;
+    }
+
+    footer .box ul li a {
+      color: var(--pure);
+      transition: all 0.3s ease;
+    }
+
+    footer .box ul li a:hover {
+      color: var(--primary);
+    }
+
+    footer .box h3 {
+      border-bottom: 1px solid var(--primary);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer .box p {
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    footer .box ul li {
+      margin-bottom: 1rem;
+    }
+
+    footer .box:nth-child(3)>div {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer .box:nth-child(3) {
+      text-align: left;
+    }
+
+    footer .box:nth-child(3) h3 {
+      text-align: center;
+    }
+
+    footer .box:nth-child(3)>div img {
+      margin-right: 1rem;
+    }
+
+    footer .box:nth-child(3) ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .follow ul li a img {
+      margin-right: 1rem;
+    }
+
+    /* footer copyrigt////////////////////// */
+    footer.copyright {
+      padding: 1rem 0;
+      background: var(--secondary);
+      color: var(--pure);
+      text-align: center;
+      font-size: 0.75rem;
+    }
+
+    footer.copyright a {
+      color: var(--primary);
+    }
+
+    /* This is for responsiveness//////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////// */
+    .main-wrappper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .nav-background {
+      width: 100%;
+      height: 100%;
+      background: var(--light);
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      z-index: 1;
+    }
+
+    .nav-tigger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 10px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .nav-tigger svg {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .site-content-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: var(--heaven);
+      z-index: 2;
+      transition: all 0.2s ease;
+    }
+
+    .site-content-wrapper.scaled {
+      transform: scale(0.9) translatex(90%);
+      border-radius: 3px;
+      box-shadow: 0 3px 10px 0 var(--secondary);
+    }
+
+    .site-content {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .nav-background {
+      padding: 1rem;
+    }
+
+    .nav-background .mobile-nav {
+      padding: 1rem;
+    }
+
+    .nav-background .mobile-nav ul {
+      list-style-type: none;
+    }
+
+    .nav-background .mobile-nav ul li {
+      margin-bottom: 1rem;
+    }
+
+    .nav-background .mobile-nav ul li a {
+      color: var(--secondary);
+      font-family: "Raleway-medium";
+    }
+
+    .nav-background .mobile-nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    .nav-background .contact,
+    .nav-background .time {
+      padding: 1rem;
+      padding-left: 0;
+    }
+
+    .nav-background .contact {
+      padding-bottom: 2rem;
+    }
+
+    .nav-background .contact img {
+      margin-right: 1rem;
+    }
+
+    .nav-background .time img {
+      margin-right: 1rem;
+    }
+
+    .contact h5 {
+      font-family: "Raleway-bold";
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+    }
+
+    .contact h6 {
+      font-size: 0.75rem;
+    }
+
+    .time h5 {
+      font-family: "Raleway-bold";
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+    }
+
+    .time h6 {
+      font-size: 0.75rem;
+    }
+
+    .nav-background .cart {
+      margin-bottom: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-background .cart a {
+      color: var(--secondary);
+      font-family: "Raleway-bold";
+    }
+
+    .nav-background .cart img {
+      margin-right: 0.5rem;
+      width: 20px;
+      height: 20px;
+    }
+
+    /* /////////////////////////Media Quries //////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////// */
+
+    @media only screen and (min-width: 1200px) {
+      .about .about-meal-wrap img {
+        top: -4px;
+        width: 53%;
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+        position: relative;
+        right: -182px;
+      }
+
+      .container {
+        max-width: 1152px;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      header.hero {
+        margin-top: 0;
+      }
+
+      header.hero .hero-image img {
+        width: 14rem;
+        top: 142px;
+        right: -23rem;
+      }
+
+      .nav-tigger {
+        display: block;
+      }
+
+      nav {
+        display: none;
+      }
+
+      header.hero .hero-image {
+        left: 29.75rem;
+        top: -120px;
+      }
+
+      .about-meal-wrap img {
+        top: -76px;
+        width: 80%;
+        margin-top: 2.5rem;
+        margin-bottom: 0.2rem;
+        position: relative;
+        right: -32px;
+      }
+
+      section.services .service-card {
+        padding: 5rem 1rem;
+      }
+
+      .contact-me {
+        padding: 50px;
+      }
+
+      .contact-info {
+        margin-bottom: 40px;
+      }
+
+      .container-contact {
+        flex-direction: column;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+
+      .content {
+        width: 81%;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      header.hero {
+        margin-top: 0;
+      }
+
+      header.hero .hero-image img {
+        width: 10rem;
+        top: 253px;
+        right: -12rem;
+      }
+
+      .about .about-meal-wrap {
+        flex-direction: column;
+        margin: 1rem;
+      }
+
+      .about .about-meal-wrap img {
+        width: 72%;
+        margin-top: 3.5rem;
+        margin-bottom: 0.2rem;
+        position: relative;
+        right: -97px;
+      }
+
+      .soft-skills h1 {
+        padding: 3rem 0 0 0;
+      }
+
+
+
+      .contact-me .content {
+        max-width: 100vw;
+      }
+
+      .contact-me .content h2 {
+        font-size: 1.9rem;
+        font-weight: 300;
+      }
+
+      .contact-me .content p {
+        margin-top: 12px;
+        font-size: 1.1em;
+        font-weight: 300;
+      }
+
+      .container-contact .contact-info {
+        width: 100%;
+      }
+
+
+
+      footer .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer .box {
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+
+      footer .box:nth-child(3) h3 {
+        text-align: left;
+      }
+
+      footer .box:nth-child(3)>div {
+        display: block;
+      }
+
+      section.services .service-card {
+        padding: 5rem 0.2rem;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+      .welcome {
+        padding: 0.6rem;
+        margin-top: 2rem;
+      }
+
+      header.hero {
+        margin-top: 1rem;
+        height: 560px;
+      }
+
+      header.hero .hero-image img {
+        width: 12rem;
+        top: 202px;
+        right: 4rem;
+      }
+
+      header.hero h1 {
+        font-family: "Raleway-extrabold";
+        color: var(--secondary);
+        font-size: 1.9rem;
+        margin-bottom: 0.2rem;
+      }
+
+      header.hero h3 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+      }
+
+      header .button {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header .button .btn-primary {
+        margin-top: 0.3rem;
+      }
+
+      header .button .btn {
+        margin-bottom: 0.5rem;
+      }
+
+      header.hero .container p {
+        margin-top: 0.6rem;
+      }
+
+      header.hero .hero-image {
+        right: 0px;
+        top: 0px;
+      }
+
+      .about .about-meal-wrap img {
+        width: 72%;
+        top: -13px;
+        margin-top: 2.5rem;
+        margin-bottom: 0.2rem;
+        position: relative;
+        right: -43px;
+      }
+
+      .skills-wrapper {
+        flex-direction: column;
+      }
+
+      .soft-skills h1 {
+        padding: 3rem 0 0 0;
+      }
+
+      .graphic-designing .graphic-content {
+        flex-direction: column;
+      }
+
+      .graphic-designing .graphic-content img {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      .photoshop .photoshop-content {
+        flex-direction: column;
+      }
+
+      .photoshop .photoshop-content img {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      .motion-graphics .motion-content,
+      .motion-graphics .motion-content video {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0.5rem;
+      }
+
+      section.services .service-card p {
+        padding: .5rem;
+      }
+
+      .blog-wapper {
+        flex-direction: column;
+      }
+
+      section.blogs .blog-card {
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        padding-top: 1rem;
+        margin-right: 1rem;
+        position: relative;
+        border-radius: 4px;
+        margin-top: 1.5rem;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+
+      footer .box:nth-child(3) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .service-wrapper {
+        flex-direction: column;
+      }
+
+      section.services .service-card {
+        margin-bottom: 6rem;
+        width: 87%;
+      }
+
+      .contact-me .content h2 {
+        text-align: center;
+      }
+    }
+
+
+
+    /*/==/=/=/=/=/=//==/=//= Utilities Center/////////////////////==/=/==/=/=/=/=/=/=/*/
+    .flex {
+      display: flex;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .center-items {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .magic-shadow {
+      position: relative;
+      background: var(--heaven);
+    }
+
+    .magic-shadow::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 69px;
+      background-image: url(shadow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: -23px;
+      z-index: -1;
+    }
+
+    .btn {
+      padding: 0.75rem 0.7rem;
+      border-radius: 4px;
+      border: none;
+      line-height: 0.8;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid var(--primary);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--heaven);
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--heaven);
+    }
+
+    .section-heading {
+      font-family: "Raleway-bold";
+      text-align: center;
+      position: relative;
+      margin-bottom: 3rem;
+    }
+
+    .section-heading::after {
+      content: ".";
+      display: block;
+      width: 100%;
+      height: 30px;
+      background-image: url(hr.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      bottom: -40px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .magic-shadow-sm-service {
+      position: relative;
+      background: var(--heaven);
+    }
+
+    .magic-shadow-sm-service::after {
+      content: "";
+      display: block;
+      width: 92%;
+      height: 100px;
+      margin-right: rem;
+      background-image: url(shadow-sm.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      bottom: -39px;
+      z-index: -1;
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+
+    .text-primary {
+      color: var(--primary);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="nav-background">
+      <div class="mobile-logo">
+        <img src="my_logo_updated.png" alt="">
+      </div>
+      <div class="mobile-nav">
+
+        <!-- This is for the mobile navigation -->
+        <div class="nav-top">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#blogs">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li> <a href="#work">Gallery</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="contact flex center-items">
+          <img src="phone-recoverd.png" alt="">
+          <div>
+            <h5>Phone: (+91) 7889662700</h5>
+            <h6>E-mail: sartajashraf842@gmail.com</h6>
+          </div>
+        </div>
+
+        <div class="time flex center-items">
+          <img src="clockk.png" alt="">
+          <div>
+            <h5>Working Hours</h5>
+            <h6>Mon - Sat ( 2:00 pm - 8:00 am</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ended here -->
+
+    <div class="site-content-wrapper">
+      <div class="nav-tigger">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+      </div>
+
+
+      <!-- THis is the first bar///////////////////////////////////////////////////////////// 
+                ///////////////////////////////////////////////////////////////////////////////////////-->
+      <div class="site-content">
+
+        <!-- This the first nav -->
+        <nav>
+          <div class="top">
+            <div class="container flex justify-between center-items">
+              <div class="contact flex  center-items">
+                <img src="phone-recoverd.png" alt="phone icon">
+                <div>
+                  <h5>Phone : (+91) 7889662700</h5>
+                  <h6>E-mail: sartajashraf842@gmail.com</h6>
+                </div>
+              </div>
+              <div class="branding">
+                <img src="my_logo_updated.png" alt="">
+              </div>
+              <div class="time flex  center-items">
+                <img src="clockk.png" alt="phone icon">
+                <div>
+                  <h5>Working Hours</h5>
+                  <h6>Mon - Sunday ( 2:00pm - 8:00am)</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of nav bar conatining the logo and the 
+                working details  -->
+
+
+
+          <!-- This is the main navbar having all the navigation items -->
+          <div id="home" class="navbar magic-shadow">
+            <div class="container flex justify-center">
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About Me</a>
+              <a href="#skills">Skills</a>
+              <a href="#services">Services</a>
+              <a href="#work">Work Samples</a>
+              <a href="#blogs">Blogs</a>
+              <a href="#contact-me">Cotact Me</a>
+            </div>
+          </div>
+        </nav>
+        <!-- End of main nav bar -->
+
+
+
+        <!-- This is the text infomation/main content sectiom class -->
+        <header class="hero flex center-items">
+          <div class="container">
+            <div class="welcome flex center-items">
+              <span> Welcome to </span>
+              <img src="MY LOGO SMALL.png" alt="LOGO">
+            </div>
+            <h1>HI I AM <span>SARTAJ ASHRAF</span> </h1>
+            <h3>Programmer || Graphic Designer || Frontend Developer || Virtual Assistant</h3>
+            <p>I am Sartaj Ashraf, a Computer Science Student with good coding skills and knowledge in
+              different programming language like C language, C++, python and java Script. Also my
+              specialities include Data Entry Virtual Assistance , Video Editing, Graphic Designing and
+              Frontend Web Developing.
+            </p>
+            <div class="button ">
+              <a href=""> <button class="btn btn-primary">Download CV</button></a>
+              <a href=""> <button class="btn btn-secondary">Contact Me</button></a>
+            </div>
+            <div class="hero-image">
+              <img src="profile.png" alt="stra img">
+            </div>
+          </div>
+        </header>
+        <!-- End of text infomation class -->
+
+
+        <!-- This is the about section -->
+        <section id="about" class="about">
+          <div class="container">
+            <h1 class="section-heading">More About Me</h1>
+            <div class="about-meal-wrap flex ">
+              <div class="about-imgs flex-1 justify-center">
+                <img src="about-trail-img.jpg" alt="About Image">
+              </div>
+              <div class="flex-1 about-info">
+                <h2> I am seeking opportunities to work on some creative and challenging projects.</h2>
+                <p>What I do, I strive to do it well: I am passionate about quality code, system's architecture and
+                  design and everything low-code. My focus lies on Outsystems, but I am a generalist in the areas of on
+                  Front-end Web Developing on HTML5, CSS3, Java-script, which I have gathered during my years of
+                  experience as a BCA Student.</p>
+                <button class="btn btn-secondary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of The About Section -->
+
+
+
+
+        <!-- This is for skills section  -->
+
+        <section id="skills" class="skills">
+          <div class="container">
+            <h1 class="section-heading"> My Skills <sub>(Self Learned)</sub> </h1>
+            <div class="skills-wrapper flex ">
+              <div class="progress-bar flex-1 justify-center">
+                <h1>Technical Skills</h1>
+
+                <h4>HTML5</h4>
+                <div class="progress flex">
+                  <div class="progress-line">
+                    <span>95%</span>
+                  </div>
+                </div>
+
+                <h4>CSS3</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>85%</span>
+                  </div>
+                </div>
+
+                <h4>C Langauge</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>95%</span>
+                  </div>
+                </div>
+
+                <h4>Java Script</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>30%</span>
+                  </div>
+                </div>
+
+                <h4>Python</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>40%</span>
+                  </div>
+                </div>
+
+                <h4>Graphic Designing</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>80%</span>
+                  </div>
+                </div>
+
+                <h4>Motion Graphics</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>70%</span>
+                  </div>
+                </div>
+
+                <h4>Microsoft Office Suit</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>82%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1 progress-bar soft-skills">
+                <h1>Soft Skills</h1>
+
+                <h4>Communication Skills</h4>
+                <div class="progress flex">
+                  <div class="progress-line">
+                    <span>80%</span>
+                  </div>
+                </div>
+
+                <h4>Problem Solving</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>74%</span>
+                  </div>
+                </div>
+
+                <h4>Analytical Thinking</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>83%</span>
+                  </div>
+                </div>
+
+                <h4>Logic Building</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>45%</span>
+                  </div>
+                </div>
+
+                <h4>Project Management</h4>
+                <div class="progress">
+                  <div class="progress-line">
+                    <span>80%</span>
+                  </div>
+                </div>
+                <div class="text-center btn-wrapper">
+                  <button class="btn btn-secondary">View More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Services section/////////////////////// -->
+        <section id="services" class="services">
+          <div class="container">
+            <h1 class="section-heading">Services Offered </h1>
+            <div class="service-wrapper flex">
+              <div class="service-card magic-shadow-sm-service">
+                <img class="icon" src="programming.png" alt="">
+                <h2>Programming</h2>
+                <p> I've good coding skills and knowledge in different programming language like C
+                  language, C++, python and java Script <br>
+                  Frontend Web Development : <strong>Web desgin, UI desgin, Responsive Design
+                  </strong> <br>
+                  I have completed more than <strong>30 Mini Projects</strong> under different
+                  programming technologies.
+                </p>
+                <button class="btn btn-secondary">View Projects</button>
+              </div>
+              <div class="service-card magic-shadow-sm-service">
+                <img class="icon" src="graphic-design.png" alt="">
+                <h2>Designing</h2>
+                <p> Graphic Designing(Software i'm Familier with :: Adobe Photoshop, Illustrator ,After
+                  Effects) including :<strong> Poster Desgin, Web design, Logo Desgin, UI/UX design,
+                    typography ideas, marketing materials. Books, magazines, newspapers, and other
+                    publications, Advertisements and commercials.</strong>
+                  <br> Motion Graphics including : <strong> visual effects, 2d or 3d animation and
+                    other cinematic tranisitions . </strong>
+                </p>
+                <a href="#work"><button class="btn btn-secondary">View Samples</button></a>
+              </div>
+
+              <div class="service-card magic-shadow-sm-service">
+                <img class="icon" src="data-entry.png" alt="">
+                <h2>Data Entry</h2>
+                <p>Data Entry including : <strong> Data Entry, Data Mining, Copy Paste, Web Research,
+                    Data Scraping, Google Sheet Data Entry, Data collection, Typing work, CRM Data
+                    Entry work, Fast typing in Excel or Word, Business Card Data Entry, Shopify Data
+                    Entry, WordPress Data Entry, E-commerce Products Listing, Real Estate Research
+                    and Data Entry</strong> </p>
+                <button class="btn btn-secondary">View All Services</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work Samples -->
+        <section id="work" class="work">
+          <div class="container">
+            <h1 class="section-heading">Work Samples</h1>
+
+            <div class="work-wrapper">
+              <div class="graphic-designing">
+                <div class="text-center">
+                  <h1>Graphic Designing</h1>
+                </div>
+                <div class="graphic-content flex">
+                  <img src="img-1.png" alt="" width="20%">
+                  <img src="img-2.png" alt="" width="20%">
+                  <img src="img-3.png" alt="" width="20%">
+                  <img src="img-4.png" alt="" width="20%">
+                  <img src="img-5.png" alt="" width="20%">
+
+                </div>
+              </div>
+              <div class="photoshop">
+                <div class="text-center ">
+                  <h1>Photoshop Manipulations</h1>
+                </div>
+                <div class="photoshop-content flex">
+                  <img src="img-1.jpg" alt="" width="20%">
+                  <img src="img-2.jpg" alt="" width="20%">
+                  <img src="img-3.jpg" alt="" width="20%">
+                  <img src="img-4.png" alt="" width="20%">
+                  <img src="img-7.png" alt="" width="20%">
+
+                </div>
+              </div>
+
+              <div class="motion-graphics">
+                <div class="text-center">
+                  <h1> Motion Graphic And Video Creation</h1>
+                </div>
+                <div class="motion-content flex">
+                  <video src="minimal logo reveal.mp4" width="24%" loop autoplay muted controls></video>
+                  <video src="Final Logo Animation.mp4" width="25%" loop autoplay muted controls></video>
+                  <video src="bursting logo reveal.mp4" width="25%" loop autoplay muted></video>
+                  <video src="create a 3d parallax slideshow videos and animations.m4v" loop autoplay muted width="24%"
+                    controls></video>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </section>
+
+
+
+        <!-- Blog Section.//////////////////////////////////////////////////////////////////////////////// -->
+        <section class="blogs" id="blogs">
+          <div class="container">
+            <h1 class="section-heading">Blogs</h1>
+            <div class="blog-wapper  flex">
+              <div class="blog-card magic-shadow-sm-service">
+                <div>
+                  <img src="contemooray-blog.jfif" alt="">
+                </div>
+                <div>
+                  <a href="">
+                    <h4>How does science and technology affect contemporary life?</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="blog-card magic-shadow-sm-service">
+                <div>
+                  <img src="crime-blog.jfif" alt="">
+                </div>
+                <div>
+                  <a href="">
+                    <h4>What is the contribution of technology in reducing crime rates?</h4>
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog-card magic-shadow-sm-service">
+                <div>
+                  <img src="blog-1.png" alt="">
+                </div>
+                <div>
+                  <a href="">
+                    <h4>What things used to be science fiction, but are now science fact?</h4>
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog-card magic-shadow-sm-service">
+                <div>
+                  <img src="apple mask blog.jfif" alt="">
+                </div>
+                <div>
+                  <a href="">
+                    <h4>What is an Apple mask, and how much does it cost?</h4>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- Contact Us sections -->
+        <section id="contact-me" class="contact-me">
+          <div class="container-con-wrapper">
+            <div class="content ">
+              <h2>Contact Me</h2>
+            </div>
+            <div class="container-contact">
+              <div class="contact-info">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-address-card"></i></i></div>
+                  <div class="text">
+                    <h3>Address</h3>
+                    <p>Mughal-pora Pulwama J&K, Zip-code 192301</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icon"><i class="fa fa-phone-square"></i></div>
+                  <div class="text">
+                    <h3>Phone</h3>
+                    <p> +917889662700</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                  <div class="text">
+                    <h3>Email</h3>
+                    <p>sartajashraf842@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form">
+                <form>
+                  <h2>Send Message</h2>
+                  <div class="inputBox">
+                    <input type="text" name="" id="" required="Requrired">
+                    <span> Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" name="" id="" required="Requrired">
+                    <span> Email Address</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea name="message" id="" required="Required"></textarea>
+                    <span>Type your message</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="submit" name="submit" id="submit" value="Send">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <!-- Footer section -->
+        <footer>
+          <div class="container">
+            <div class="box">
+              <h3>About Me <sub>(Education)</sub></h3>
+              <p>I have completed HSC-II education in Mehjoor Memorial Boys Higher Secondary School with
+                72%, completed One Year Diploma in Computer Science (DCA). Currently pursuing
+                BCA(Bachlor of Computer Application in CASET College</p>
+              <button class="btn btn-secondary">Read More</button>
+            </div>
+
+
+            <div class="box">
+              <h3>Quik Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#blogs">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li> <a href="#work">Gallery</a></li>
+                <li><a href="#contact-me">Contact Us</a></li>
+              </ul>
+
+            </div>
+            <div class="box follow">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#"> <img src="facebook.svg" alt="">
+                    <span>Facebook</span></a></li>
+                <li><a href=""><img src="twitter.svg" alt="">
+                    <span>Twitter</span></a></li>
+                <li><a href=""><img src="google.svg" alt="">
+                    <span>Google</span></a></li>
+                <li><a href=""> <img src="instagram.svg" alt="">
+                    <span>Instagram</span></a></li>
+
+              </ul>
+            </div>
+
+          </div>
+        </footer>
+      </div>
+
+    </div>
+  </div>
+  <script>
+
+    window.addEventListener('load', () => {
+      let progressBars = document.querySelectorAll('.progress-line');
+      let values = [
+        '95%',
+        '85%',
+        '95%',
+        '30%',
+        '40%',
+        '80%',
+        '70%',
+        '82%',
+
+
+        '80%',
+        '74%',
+        '83%',
+        '45%',
+        '80%'
+      ];
+      progressBars.forEach((progress, index) => {
+        progress.style.width = values[index];
+      });
+    });
+
+    function myfunction(smallImg) {
+      var fullImg = document.getElementById("image-box");
+      fullImg.src = smallImg.src
+    }
+    function myfunctio(smallImg) {
+      var fullImg = document.getElementById("image-box2");
+      fullImg.src = smallImg.src
+    }
+
+    document.querySelector('.nav-tigger').addEventListener("click", () => {
+      document.querySelector('.site-content-wrapper').classList.toggle('scaled')
+
+    })
+
+
+  </script>
+</body>
+
+</html>
